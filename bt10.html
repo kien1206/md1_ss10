@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tính toán giá trị của biến</title>
+</head>
+<body>
+<script>
+    let a = 6;
+    // ++a là tiền tố tăng: Tăng giá trị của a trước khi sử dụng nó
+    // a++ là hậu tố tăng: Sử dụng giá trị hiện tại của a rồi mới tăng giá trị của nó
+    let result = ++a + a + a++ + ++a + a;
+    // Diễn giải chi tiết:
+    // Bắt đầu: a = 6
+    // ++a: Tăng a lên 7, rồi sử dụng a = 7 (result = 7)
+    // a: a hiện tại là 7 (result = 7 + 7 = 14)
+    // a++: Sử dụng a hiện tại là 7, rồi mới tăng a lên 8 (result = 14 + 7 = 21, a = 8)
+    // ++a: Tăng a lên 9, rồi sử dụng a = 9 (result = 21 + 9 = 30)
+    // a: a hiện tại là 9 (result = 30 + 9 = 39)
+    console.log("Giá trị của result là: " + result); // 39
+    console.log("Giá trị của a sau khi thực hiện chương trình: " + a); // 9
+</script>
+</body>
+</html>

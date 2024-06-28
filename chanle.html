@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm Tra Số Chẵn Lẻ</title>
+</head>
+<body>
+    <script>
+        var num = prompt("Nhập vào một số");
+        var number = parseFloat(num);
+
+        if (!isNaN(number)) {
+            var isEven = number % 2 === 0;
+            alert("Số " + number + " là số chẵn: " + isEven);
+        } else {
+            alert("Vui lòng nhập một số hợp lệ");
+        }
+    </script>
+</body>
+</html>
